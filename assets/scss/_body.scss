@@ -1,0 +1,115 @@
+.section1 {
+  margin: 350px 0 50px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  @include tablet {
+    margin: 150px 0 30px;
+  }
+  @include desktop {
+    gap: 75px;
+  }
+}
+.section2 {
+  background-color: #005a9c;
+  @include tablet {
+    background: linear-gradient(to right, #005a9c 50%, #2d3f64 50%);
+  }
+  .section-internal1 {
+    background-image: url(./../img/logo-white-50.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    @include tablet {
+      background-size: 60%;
+      display: flex;
+      align-items: flex-end;
+    }
+    @include desktop {
+      background-size: 40%;
+    }
+    .content {
+      padding-top: 70px;
+
+      display: flex;
+      @include tablet {
+        padding-top: 0;
+      }
+      img {
+        width: 150px;
+        @include tablet {
+          width: 273px;
+        }
+        @include desktop {
+          width: 333px;
+        }
+      }
+      .slogan {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        color: #fefefe;
+        @include tablet {
+          margin-top: 40px;
+          font-size: 40px;
+          line-height: 36px;
+          position: relative;
+          width: 140px;
+        }
+        @include desktop {
+          width: auto;
+          font-size: 45px;
+          line-height: 46px;
+        }
+        a {
+          @include tablet {
+            position: absolute;
+            width: 370px;
+          }
+          @include desktop {
+            position: static;
+          }
+          span {
+            font-weight: 700;
+            font-size: 25px;
+            @include tablet {
+              font-size: 40px;
+            }
+            @include desktop {
+              font-size: 65px;
+            }
+          }
+        }
+      }
+    }
+    .desc {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      color: #fefefe;
+      width: 316px;
+      margin: 40px auto;
+      @include tablet {
+        margin: 0 25px 30px 0;
+        width: 320px;
+      }
+      @include desktop {
+        font-size: 23px;
+        line-height: 34px;
+        width: 580px;
+      }
+    }
+  }
+  .section-internal2 {
+    @include tablet {
+      display: none;
+    }
+  }
+  .section-internal3 {
+    display: none;
+    @include tablet {
+      display: block;
+    }
+  }
+}
