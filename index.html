@@ -241,18 +241,18 @@
         <div class="contents">
           <article class="content1">
             <aside class="form">
-              <form>
+              <form action="./mail/sending.php" method="post">
                 <div class="inputs">
                   <label class="lbl-text">
                     NOMBRE:
-                    <input type="text" name="nombre" autocomplete="on" />
+                    <input type="text" name="name" autocomplete="on" />
                   </label>
                   <label class="lbl-text">
                     APELLIDO:
-                    <input type="text" name="apellido" autocomplete="on" />
+                    <input type="text" name="lastname" autocomplete="on" />
                   </label>
                   <label class="lbl-text">
-                    MAIL:
+                    EMAIL:
                     <input type="email" name="email" autocomplete="on" />
                   </label>
                   <label class="lbl-chx">
@@ -277,7 +277,9 @@
                   </p>
                 </div>
                 <div class="btn-sumit-container">
-                  <button class="btn-submit-form">Suscribirme</button>
+                  <button type="submit" class="btn-submit-form">
+                    Suscribirme
+                  </button>
                 </div>
               </form>
             </aside>
