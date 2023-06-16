@@ -39,7 +39,8 @@
         padding-top: 0;
       }
       img {
-        width: 150px;
+        margin-left: -3px;
+        width: 200px;
         @include tablet {
           width: 273px;
         }
@@ -498,15 +499,15 @@
   .mockup {
     position: absolute;
     z-index: 1;
-    right: 0;
+    right: -75px;
     height: 386px;
     width: auto;
     @include tablet {
-      height: 415px;
-      top: -6px;
+      height: 410px;
+      top: -2px;
     }
     @include desktop {
-      height: 533px;
+      height: 726px;
     }
   }
   .big-content {
@@ -552,7 +553,7 @@
           background-size: 50%;
         }
         @include desktop {
-          width: 35%;
+          width: 33%;
           padding-right: 0;
         }
 
@@ -568,6 +569,9 @@
                 border-bottom: #fff solid 1px;
                 @include tablet {
                   width: 63%;
+                }
+                @include desktop {
+                  width: 80%;
                 }
                 input[type="text"],
                 input[type="email"] {
@@ -605,7 +609,8 @@
               }
             }
             .btn-sumit-container {
-              text-align: center;
+              text-align: start;
+              padding-left: 45px;
               @include desktop {
                 margin-top: 30px;
               }
@@ -657,6 +662,9 @@
         .img3 {
           @include desktop {
             width: 450px;
+          }
+          @include biggest-desktop {
+            width: 50%;
           }
         }
         .location-info {
