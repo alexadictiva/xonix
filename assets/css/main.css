@@ -272,22 +272,22 @@ img {
   }
 }
 @media screen and (min-width: 768px) {
-  .section2 .section-internal1 .content .slogan a {
+  .section2 .section-internal1 .content .slogan span {
     position: absolute;
     width: max-content;
   }
 }
-.section2 .section-internal1 .content .slogan a span {
+.section2 .section-internal1 .content .slogan span span {
   font-weight: 700;
   font-size: 25px;
 }
 @media screen and (min-width: 768px) {
-  .section2 .section-internal1 .content .slogan a span {
+  .section2 .section-internal1 .content .slogan span span {
     font-size: 40px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .section2 .section-internal1 .content .slogan a span {
+  .section2 .section-internal1 .content .slogan span span {
     font-size: 65px;
   }
 }

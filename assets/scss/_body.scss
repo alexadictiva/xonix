@@ -67,7 +67,7 @@
           line-height: 46px;
           letter-spacing: 2px;
         }
-        a {
+        span {
           @include tablet {
             position: absolute;
             width: max-content;
