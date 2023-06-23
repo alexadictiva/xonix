@@ -105,17 +105,26 @@
     <section class="section section2">
       <div class="section-internal1">
         <aside class="content">
-          <picture>
-            <source
-              media="(min-width: 768px)"
-              srcset="./assets/img/tablet/square-clock.png"
-            />
-            <source
-              media="(min-width: 1024px)"
-              srcset="./assets/img/desktop/square-clock.png"
-            />
-            <img src="./assets/img/mobile/square-clock.png" alt="..." />
-          </picture>
+          <img
+            class="img-mobile"
+            src="./assets/img/square-clock1.png"
+            alt="..."
+          />
+          <img
+            class="img-tablet"
+            src="./assets/img/square-clock2.png"
+            alt="..."
+          />
+          <img
+            class="img-desktop"
+            src="./assets/img/square-clock3.png"
+            alt="..."
+          />
+          <img
+            class="img-biggest-desktop"
+            src="./assets/img/square-clock4.png"
+            alt="..."
+          />
           <p class="slogan">
             <span>
               mas que un reloj <br />
@@ -221,88 +230,91 @@
       </article>
     </section>
     <section class="section section5">
-      <picture>
-        <source
-          media="(min-width: 1024px)"
-          srcset="./assets/img/desktop/white-clock-form.png"
-        />
-        <img
-          class="mockup"
-          src="./assets/img/mobile/white-clock-form.png"
-          alt="..."
-        />
-      </picture>
-      <div class="big-content">
-        <h2>
-          RECIBE TODAS LAS <br />
-          NOVEDADES, PROMOS <br />
-          Y ÚLTIMOS INGRESOS
-        </h2>
-        <div class="contents">
-          <article class="content1">
-            <aside class="form">
-              <form action="./mail/sending.php" method="post">
-                <div class="inputs">
-                  <label class="lbl-text">
-                    NOMBRE:
-                    <input type="text" name="name" autocomplete="on" />
-                  </label>
-                  <label class="lbl-text">
-                    APELLIDO:
-                    <input type="text" name="lastname" autocomplete="on" />
-                  </label>
-                  <label class="lbl-text">
-                    EMAIL:
-                    <input type="email" name="email" autocomplete="on" />
-                  </label>
-                  <label class="lbl-chx">
-                    <input type="checkbox" /> Deseo recibir promos y beneficios
-                  </label>
-                </div>
-                <div class="accounts-autocomplete">
-                  <p>
-                    <a href=""
-                      ><img src="./assets/icon/google-icon.svg" alt="..."
-                    /></a>
-                  </p>
-                  <p>
-                    <a href=""
-                      ><img src="./assets/icon/face-icon.svg" alt="..."
-                    /></a>
-                  </p>
-                  <p>
-                    <a href=""
-                      ><img src="./assets/icon/twitter-icon.svg" alt="..."
-                    /></a>
-                  </p>
-                </div>
-                <div class="btn-sumit-container">
-                  <button type="submit" class="btn-submit-form">
-                    Suscribirme
-                  </button>
-                </div>
-              </form>
-            </aside>
-          </article>
-          <article class="content2">
-            <img
-              class="float-img1"
-              src="./assets/img/logo-blue-50.svg"
-              alt="..."
-            />
-            <img class="img3" src="./assets/img/map-location.svg" alt="..." />
-            <aside class="location-info">
+      <div>
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="./assets/img/desktop/white-clock-form.png"
+          />
+          <img
+            class="mockup"
+            src="./assets/img/mobile/white-clock-form.png"
+            alt="..."
+          />
+        </picture>
+        <div class="big-content">
+          <h2>
+            RECIBE TODAS LAS <br />
+            NOVEDADES, PROMOS <br />
+            Y ÚLTIMOS INGRESOS
+          </h2>
+          <div class="contents">
+            <article class="content1">
+              <aside class="form">
+                <form action="./mail/sending.php" method="post">
+                  <div class="inputs">
+                    <label class="lbl-text">
+                      NOMBRE:
+                      <input type="text" name="name" autocomplete="on" />
+                    </label>
+                    <label class="lbl-text">
+                      APELLIDO:
+                      <input type="text" name="lastname" autocomplete="on" />
+                    </label>
+                    <label class="lbl-text">
+                      EMAIL:
+                      <input type="email" name="email" autocomplete="on" />
+                    </label>
+                    <label class="lbl-chx">
+                      <input type="checkbox" /> Deseo recibir promos y
+                      beneficios
+                    </label>
+                  </div>
+                  <div class="accounts-autocomplete">
+                    <p>
+                      <a href=""
+                        ><img src="./assets/icon/google-icon.svg" alt="..."
+                      /></a>
+                    </p>
+                    <p>
+                      <a href=""
+                        ><img src="./assets/icon/face-icon.svg" alt="..."
+                      /></a>
+                    </p>
+                    <p>
+                      <a href=""
+                        ><img src="./assets/icon/twitter-icon.svg" alt="..."
+                      /></a>
+                    </p>
+                  </div>
+                  <div class="btn-sumit-container">
+                    <button type="submit" class="btn-submit-form">
+                      Suscribirme
+                    </button>
+                  </div>
+                </form>
+              </aside>
+            </article>
+            <article class="content2">
               <img
-                class="float-img2"
-                src="./assets/icon/location-icon.svg"
+                class="float-img1"
+                src="./assets/img/logo-blue-50.svg"
                 alt="..."
               />
-              <p>
-                Sarmiento 1230,
-                <br />C1012 CABA
-              </p>
-            </aside>
-          </article>
+              <img class="img3" src="./assets/img/map-location.svg" alt="..." />
+              <aside class="location-info">
+                <img
+                  class="float-img2"
+                  src="./assets/icon/location-icon.svg"
+                  alt="..."
+                />
+                <p>
+                  Sarmiento 1230,
+                  <br />C1012 CABA
+                </p>
+              </aside>
+            </article>
+          </div>
         </div>
       </div>
     </section>

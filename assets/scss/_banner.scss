@@ -19,6 +19,10 @@
       display: flex;
       justify-content: space-between;
     }
+    @include biggest-desktop {
+      max-width: 1500px;
+      margin: auto;
+    }
     text-align: center;
     img {
       width: 68px;
@@ -67,6 +71,10 @@
     top: 340px;
     left: 52%;
     transform: translateX(-50%);
+  }
+  @include biggest-desktop {
+    max-width: 1500px;
+    margin: auto;
   }
   .clocks-container {
     display: flex;
