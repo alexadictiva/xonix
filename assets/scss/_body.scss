@@ -10,12 +10,12 @@
     gap: 75px;
   }
   @include biggest-desktop {
-    max-width: 1500px;
-    margin: 150px auto 30px;
+    margin: 300px auto 30px;
+    gap: 100px;
   }
   img {
     @include biggest-desktop {
-      width: 200px;
+      width: 350px;
     }
   }
 }
@@ -41,9 +41,6 @@
       background-size: 40%;
     }
     @include biggest-desktop {
-      background-size: 55%;
-      max-width: 1500px;
-      margin: auto;
     }
     .content {
       padding-top: 70px;
@@ -62,7 +59,8 @@
           width: 333px;
         }
         @include biggest-desktop {
-          width: 433px;
+          width: 500px;
+          margin-left: -60px;
         }
         &.img-mobile {
           @include tablet {
@@ -114,6 +112,12 @@
           line-height: 50px;
           letter-spacing: 2px;
         }
+        @include biggest-desktop {
+          margin-left: 30px;
+          width: 600px;
+          font-size: 80px;
+          line-height: 75px;
+        }
         span {
           @include tablet {
             position: absolute;
@@ -130,6 +134,9 @@
             }
             @include desktop {
               font-size: 65px;
+            }
+            @include biggest-desktop {
+              font-size: 90px;
             }
           }
         }
@@ -163,9 +170,9 @@
           width: 580px;
         }
         @include biggest-desktop {
-          font-size: 26px;
-          line-height: 37px;
-          width: 590px;
+          font-size: 31px;
+          line-height: 40px;
+          width: 735px;
         }
       }
     }
@@ -227,10 +234,6 @@
           width: 18%;
         }
       }
-      @include biggest-desktop {
-        max-width: 1500px;
-        margin: auto;
-      }
     }
   }
   .section-internal4 {
@@ -264,6 +267,11 @@
       img {
         width: 33px;
         margin-bottom: 2px;
+        @include biggest-desktop {
+          width: 68px;
+          margin-bottom: 8px;
+          margin-top: 10px;
+        }
       }
       p {
         &:first-child {
@@ -284,6 +292,10 @@
           width: 170px;
           padding: 4px;
           text-align: center;
+          @include biggest-desktop {
+            width: 350px;
+            padding: 10px;
+          }
           &:hover {
             background-color: #8fc1ec;
           }
@@ -294,6 +306,9 @@
             width: 100%;
             text-decoration: none;
             background-color: transparent;
+            @include biggest-desktop {
+              font-size: 23px;
+            }
             &:hover {
               text-decoration: none;
             }
@@ -434,6 +449,10 @@
         font-size: 42px;
         line-height: 45px;
       }
+      @include biggest-desktop {
+        font-size: 58px;
+        line-height: 58px;
+      }
     }
     .refer {
       font-weight: 400;
@@ -480,6 +499,11 @@
           width: 240px;
           display: block;
           margin: auto;
+          @include biggest-desktop {
+            padding: 10px;
+            width: 350px;
+            font-size: 23px;
+          }
           &:hover {
             text-decoration: none;
             background: #014372;
@@ -567,6 +591,11 @@
         width: 80%;
         transform: translateX(70%);
       }
+      @include biggest-desktop {
+        width: 120%;
+        transform: translateX(40%);
+        margin-top: -30px;
+      }
     }
   }
 }
@@ -576,10 +605,6 @@
   position: relative;
   overflow-x: clip;
   div {
-    @include biggest-desktop {
-      max-width: 1500px;
-      margin: auto;
-    }
     .mockup {
       position: absolute;
       z-index: 1;
@@ -594,7 +619,9 @@
         height: 726px;
       }
       @include biggest-desktop {
-        right: 0;
+        top: 0;
+        height: 105vh;
+        right: -160px;
       }
     }
     .big-content {
@@ -607,6 +634,9 @@
       }
       @include desktop {
         background-image: none;
+      }
+      @include biggest-desktop {
+        padding: 50px;
       }
       h2 {
         font-weight: 700;
@@ -643,7 +673,9 @@
             width: 33%;
             padding-right: 0;
           }
-
+          @include biggest-desktop {
+            width: 40%;
+          }
           .form {
             form {
               .inputs {
@@ -656,10 +688,15 @@
                   border-bottom: #fff solid 1px;
                   @include tablet {
                     width: 63%;
+                    font-size: 16px;
                   }
                   @include desktop {
                     width: 80%;
                   }
+                  @include biggest-desktop {
+                    font-size: 21px;
+                  }
+
                   input[type="text"],
                   input[type="email"] {
                     width: 100%;
@@ -669,6 +706,12 @@
                     border: 0;
                     outline: none;
                     background-color: transparent;
+                    @include desktop {
+                      font-size: 16px;
+                    }
+                    @include biggest-desktop {
+                      font-size: 21px;
+                    }
                     &:focus,
                     &:focus-visible {
                       border: 0;
@@ -679,6 +722,12 @@
                 .lbl-chx {
                   font-size: 11px;
                   color: #fefefe;
+                  @include desktop {
+                    font-size: 15px;
+                  }
+                  @include biggest-desktop {
+                    font-size: 19px;
+                  }
                 }
               }
               .accounts-autocomplete {
@@ -692,6 +741,9 @@
                 img {
                   @include desktop {
                     width: 100px;
+                  }
+                  @include biggest-desktop {
+                    width: 115px;
                   }
                 }
               }
@@ -714,6 +766,10 @@
                   @include desktop {
                     width: 240px;
                     padding: 12px;
+                  }
+                  @include biggest-desktop {
+                    width: 350px;
+                    font-size: 23px;
                   }
                   &:focus,
                   &:focus-visible {
@@ -751,7 +807,7 @@
               width: 450px;
             }
             @include biggest-desktop {
-              width: 55%;
+              width: 58%;
             }
           }
           .location-info {
@@ -767,6 +823,9 @@
             .float-img2 {
               width: 66px;
               margin-bottom: 2px;
+              @include biggest-desktop {
+                width: 96px;
+              }
             }
             p {
               font-weight: 400;
@@ -777,6 +836,18 @@
               border-radius: 50px;
               padding: 4px;
               width: 150px;
+              @include desktop {
+                font-size: 16px;
+                width: 300px;
+                padding: 5px;
+                line-height: 19px;
+              }
+              @include biggest-desktop {
+                font-size: 18px;
+                width: 320px;
+                padding: 7px;
+                line-height: 21px;
+              }
             }
           }
         }
