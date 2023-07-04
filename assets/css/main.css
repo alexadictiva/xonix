@@ -318,8 +318,11 @@ img {
 @media screen and (min-width: 1660px) {
   .section2 .section-internal1 .content img {
     width: 500px;
-    margin-left: -60px;
+    margin-left: 60px;
   }
+}
+.section2 .section-internal1 .content img.img-mobile {
+  margin-top: -70px;
 }
 @media screen and (min-width: 768px) {
   .section2 .section-internal1 .content img.img-mobile {
@@ -456,6 +459,7 @@ img {
     font-size: 31px;
     line-height: 40px;
     width: 735px;
+    margin-left: -60px;
   }
 }
 .section2 .section-internal2 {
@@ -931,7 +935,7 @@ img {
 }
 .section4 .img-content .mockup {
   width: 150%;
-  margin-left: -65px;
+  margin-left: -55px;
   margin-bottom: -20px;
 }
 @media screen and (min-width: 768px) {

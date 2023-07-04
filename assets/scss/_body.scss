@@ -60,9 +60,10 @@
         }
         @include biggest-desktop {
           width: 500px;
-          margin-left: -60px;
+          margin-left: 60px;
         }
         &.img-mobile {
+          margin-top: -70px;
           @include tablet {
             display: none;
           }
@@ -173,6 +174,7 @@
           font-size: 31px;
           line-height: 40px;
           width: 735px;
+          margin-left: -60px;
         }
       }
     }
@@ -581,7 +583,7 @@
     }
     .mockup {
       width: 150%;
-      margin-left: -65px;
+      margin-left: -55px;
       margin-bottom: -20px;
       @include tablet {
         width: 90%;
