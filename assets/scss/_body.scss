@@ -26,12 +26,94 @@
   @include tablet {
     background: linear-gradient(to right, #005a9c 50%, #2d3f64 50%);
   }
+  .section-internal0 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    position: relative;
+    background-image: url(./../img/logo-white-50.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    @include tablet {
+      display: none;
+    }
+    .desc-content {
+      width: 50%;
+
+      .slogan {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #fefefe;
+        @include tablet {
+          margin-top: 40px;
+          font-size: 44px;
+          line-height: 36px;
+          position: relative;
+          width: 140px;
+        }
+        @include desktop {
+          width: 410px;
+          font-size: 45.5px;
+          line-height: 50px;
+          letter-spacing: 2px;
+        }
+        @include biggest-desktop {
+          margin-left: 30px;
+          width: 600px;
+          font-size: 80px;
+          line-height: 75px;
+        }
+        span {
+          @include tablet {
+            position: absolute;
+            width: max-content;
+          }
+          @include desktop {
+            //position: static;
+          }
+          span {
+            font-weight: 700;
+            font-size: 25px;
+            @include tablet {
+              font-size: 40px;
+            }
+            @include desktop {
+              font-size: 65px;
+            }
+            @include biggest-desktop {
+              font-size: 90px;
+            }
+          }
+        }
+      }
+      .desc,
+      .desc1 {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: #fefefe;
+      }
+      .desc {
+        width: 230%;
+        margin: 100px auto 15px;
+      }
+      .desc1 {
+        width: 270%;
+        margin: 0 auto -140%;
+      }
+    }
+  }
   .section-internal1 {
     position: relative;
     background-image: url(./../img/logo-white-50.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    display: none;
     @include tablet {
       background-size: 60%;
       display: flex;

@@ -273,12 +273,104 @@ img {
     background: linear-gradient(to right, #005a9c 50%, #2d3f64 50%);
   }
 }
+.section2 .section-internal0 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  position: relative;
+  background-image: url(./../img/logo-white-50.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .section2 .section-internal0 {
+    display: none;
+  }
+}
+.section2 .section-internal0 .desc-content {
+  width: 50%;
+}
+.section2 .section-internal0 .desc-content .slogan {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fefefe;
+}
+@media screen and (min-width: 768px) {
+  .section2 .section-internal0 .desc-content .slogan {
+    margin-top: 40px;
+    font-size: 44px;
+    line-height: 36px;
+    position: relative;
+    width: 140px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section2 .section-internal0 .desc-content .slogan {
+    width: 410px;
+    font-size: 45.5px;
+    line-height: 50px;
+    letter-spacing: 2px;
+  }
+}
+@media screen and (min-width: 1660px) {
+  .section2 .section-internal0 .desc-content .slogan {
+    margin-left: 30px;
+    width: 600px;
+    font-size: 80px;
+    line-height: 75px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section2 .section-internal0 .desc-content .slogan span {
+    position: absolute;
+    width: max-content;
+  }
+}
+.section2 .section-internal0 .desc-content .slogan span span {
+  font-weight: 700;
+  font-size: 25px;
+}
+@media screen and (min-width: 768px) {
+  .section2 .section-internal0 .desc-content .slogan span span {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section2 .section-internal0 .desc-content .slogan span span {
+    font-size: 65px;
+  }
+}
+@media screen and (min-width: 1660px) {
+  .section2 .section-internal0 .desc-content .slogan span span {
+    font-size: 90px;
+  }
+}
+.section2 .section-internal0 .desc-content .desc,
+.section2 .section-internal0 .desc-content .desc1 {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fefefe;
+}
+.section2 .section-internal0 .desc-content .desc {
+  width: 230%;
+  margin: 100px auto 15px;
+}
+.section2 .section-internal0 .desc-content .desc1 {
+  width: 270%;
+  margin: 0 auto -140%;
+}
 .section2 .section-internal1 {
   position: relative;
   background-image: url(./../img/logo-white-50.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .section2 .section-internal1 {
