@@ -505,7 +505,7 @@
   }
 }
 .section4 {
-  padding: 20px;
+  padding: 20px 0 20px 20px;
   @include tablet {
     display: flex;
     padding: 40px 20px 20px;
@@ -637,7 +637,7 @@
   .img-content {
     display: flex;
     align-items: flex-end;
-
+    //margin-right: -20px;
     @include tablet {
       width: 40%;
       order: 1;
@@ -646,6 +646,7 @@
       text-align: center;
       position: relative;
       margin-bottom: -5px;
+      width: 30%;
       @include tablet {
         display: none;
       }
@@ -663,9 +664,13 @@
         color: #000c36;
       }
     }
+    picture {
+      width: 70%;
+    }
     .mockup {
-      width: 150%;
-      margin-left: -55px;
+      //width: 150%;
+      margin-right: 16px;
+
       margin-bottom: -20px;
       @include tablet {
         width: 90%;
@@ -693,6 +698,8 @@
       position: absolute;
       z-index: 1;
       right: -75px;
+      top: 0;
+
       height: 386px;
       width: auto;
       @include tablet {
@@ -700,11 +707,11 @@
         top: -2px;
       }
       @include desktop {
-        height: 726px;
+        top: 0;
+        height: 664px;
       }
       @include biggest-desktop {
-        top: 0;
-        height: 93.9vh;
+        height: 875px;
         right: -160px;
       }
     }
@@ -814,23 +821,7 @@
                   }
                 }
               }
-              .accounts-autocomplete {
-                display: flex;
-                gap: 15px;
-                justify-content: start;
-                @include desktop {
-                  gap: 25px;
-                  margin-top: 25px;
-                }
-                img {
-                  @include desktop {
-                    width: 100px;
-                  }
-                  @include biggest-desktop {
-                    width: 115px;
-                  }
-                }
-              }
+
               .btn-sumit-container {
                 text-align: start;
                 padding-left: 45px;

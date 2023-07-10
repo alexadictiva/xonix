@@ -835,7 +835,7 @@ img {
 }
 
 .section4 {
-  padding: 20px;
+  padding: 20px 0 20px 20px;
 }
 @media screen and (min-width: 768px) {
   .section4 {
@@ -1006,6 +1006,7 @@ img {
   text-align: center;
   position: relative;
   margin-bottom: -5px;
+  width: 30%;
 }
 @media screen and (min-width: 768px) {
   .section4 .img-content .trust-container {
@@ -1025,9 +1026,11 @@ img {
   font-size: 12px;
   color: #000c36;
 }
+.section4 .img-content picture {
+  width: 70%;
+}
 .section4 .img-content .mockup {
-  width: 150%;
-  margin-left: -55px;
+  margin-right: 16px;
   margin-bottom: -20px;
 }
 @media screen and (min-width: 768px) {
@@ -1060,6 +1063,7 @@ img {
   position: absolute;
   z-index: 1;
   right: -75px;
+  top: 0;
   height: 386px;
   width: auto;
 }
@@ -1071,13 +1075,13 @@ img {
 }
 @media screen and (min-width: 1024px) {
   .section5 div .mockup {
-    height: 726px;
+    top: 0;
+    height: 664px;
   }
 }
 @media screen and (min-width: 1660px) {
   .section5 div .mockup {
-    top: 0;
-    height: 93.9vh;
+    height: 875px;
     right: -160px;
   }
 }
@@ -1210,27 +1214,6 @@ img {
 @media screen and (min-width: 1660px) {
   .section5 div .big-content .contents .content1 .form form .inputs .lbl-chx {
     font-size: 19px;
-  }
-}
-.section5 div .big-content .contents .content1 .form form .accounts-autocomplete {
-  display: flex;
-  gap: 15px;
-  justify-content: start;
-}
-@media screen and (min-width: 1024px) {
-  .section5 div .big-content .contents .content1 .form form .accounts-autocomplete {
-    gap: 25px;
-    margin-top: 25px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .section5 div .big-content .contents .content1 .form form .accounts-autocomplete img {
-    width: 100px;
-  }
-}
-@media screen and (min-width: 1660px) {
-  .section5 div .big-content .contents .content1 .form form .accounts-autocomplete img {
-    width: 115px;
   }
 }
 .section5 div .big-content .contents .content1 .form form .btn-sumit-container {
