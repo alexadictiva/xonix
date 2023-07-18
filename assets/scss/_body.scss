@@ -930,3 +930,30 @@
     }
   }
 }
+.modal {
+  background: #00000090;
+  display: block !important;
+  .modal-content {
+    background: #005a9c;
+    color: #ffffff;
+    .modal-footer {
+      border: 0;
+      button {
+        border: 0;
+        outline: none;
+        color: #005a9c;
+        background-color: #fff;
+        padding: 8px 45px;
+
+        border-radius: 4px;
+        &:hover {
+          background-color: #77afe4;
+        }
+        &:focus {
+          border: 0;
+          outline: none;
+        }
+      }
+    }
+  }
+}

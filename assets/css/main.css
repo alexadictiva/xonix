@@ -1337,6 +1337,33 @@ img {
   }
 }
 
+.modal {
+  background: rgba(0, 0, 0, 0.5647058824);
+  display: block !important;
+}
+.modal .modal-content {
+  background: #005a9c;
+  color: #ffffff;
+}
+.modal .modal-content .modal-footer {
+  border: 0;
+}
+.modal .modal-content .modal-footer button {
+  border: 0;
+  outline: none;
+  color: #005a9c;
+  background-color: #fff;
+  padding: 8px 45px;
+  border-radius: 4px;
+}
+.modal .modal-content .modal-footer button:hover {
+  background-color: #77afe4;
+}
+.modal .modal-content .modal-footer button:focus {
+  border: 0;
+  outline: none;
+}
+
 footer {
   background-color: #005a9c;
   padding: 0;
